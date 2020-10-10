@@ -1,0 +1,38 @@
+{
+  "name": "netlify-lambda-apollo-starter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development npm run start:lambda",
+    "start:lambda": "netlify-lambda serve src/lambda --config ./webpack.functions.js",
+    "build": "npm run build:lambda",
+    "build:lambda": "netlify-lambda build src/lambda --config ./webpack.functions.js"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.9.0",
+    "apollo-server-lambda": "^2.18.2",
+    "graphql": "^15.3.0",
+    "graphql-type-json": "^0.3.1"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.0.3",
+    "dotenv-webpack": "^1.7.0",
+    "netlify": "^4.8.0",
+    "netlify-lambda": "^2.0.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzeying/netlify-lambda-apollo-starter.git"
+  },
+  "author": "Tzeying",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tzeying/netlify-lambda-apollo-starter/issues"
+  },
+  "homepage": "https://github.com/tzeying/netlify-lambda-apollo-starter#readme",
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
