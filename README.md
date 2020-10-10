@@ -1,6 +1,4 @@
-# netlify-lambda-apollo-starter
-
-Starter repo for netlify-lambda for NodeJS with Apollo server implementation
+# Starter for deploying Apollo GraphQL Server to Netlify Functions
 
 - Up-to-date starter repo for deploying Apollo to Netlify Functions ([Reference](https://www.apollographql.com/docs/apollo-server/deployment/netlify/))
 
